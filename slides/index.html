@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Running Open edX in production with Docker — France Université Numérique</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../assets/reveal.js/css/theme/white.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome-all.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../assets/css/hljs/github.css">
+
+  <!-- Custom fonts/theme -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../assets/reveal.js/css/print/pdf.css' : '../assets/reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown class="title">
+        <script type="text/template">
+          # Open Source Projects
+
+          France Université Numérique
+
+          <small>
+            [Paris Open Source Summit](https://www.opensourcesummit.paris)
+            — Paris, France
+            — Décembre 6, 2018
+          </small>
+
+          <img src="../assets/images/logo-france-universite-numerique.png"
+               width="150px" alt="Logo FUN"/>
+        </script>
+      </section>
+
+      <section data-markdown>
+          ![FUN Figures](../assets/images/fun_figures.png)
+      </section>
+
+      <section>
+        <h1 style="font-size:3em;">👷</h1>
+        <p><a href="https://www.github.com/openfun">github.com/openfun</a></p>
+        <p>100% opensource</p>
+        <p>MIT licence</p>
+      </section>
+
+      <section>
+        <h2>Open edX extended and dockerized</h2>
+        <h3><a style="font-size: 0.6em;" href="https://www.github.com/openfun/openedx-docker">github.com/openfun/openedx-docker</a></h3>
+        <ul>
+          <li>Easier to deploy</li>
+          <li>More open to learning standard: LTI, xAPI,...</li>
+          <li>Extendable yet maintainable</li>
+        </ul>
+        <img src="../assets/images/openedx_cloud.png"/>
+      </section>
+
+      <section>
+        <p><img src="../assets/images/multi_lms.png"></p>
+      </section>
+
+      <section>
+        <h2>A portal for Open Education</h2>
+        <h3><a style="font-size: 0.6em;" href="https://www.github.com/openfun/richie">github.com/openfun/richie</a></h3>
+        <ul>
+          <li>Intertwined pages <span style="font-size: 0.6em; color: #777777;">universities, courses, teachers and themes</span></li>
+          <li>Advanced search <span style="font-size: 0.6em; color: #777777;">full-text, multi-facetting, auto-complete</span></li>
+          <li>Multi-lingual</li>
+          <li>Front-end editing</li>
+          <li>Access rights and publication workflow</li>
+          <li>Flexible and extensible <span style="font-size: 0.6em; color: #777777;">based on Django CMS</span></li>
+        </ul>
+      </section>
+
+      <section>
+          <p><img src="../assets/images/lti_explained.png"></p>
+      </section>
+
+      <section>
+        <h2>An LTI video provider</h2>
+        <h3><a style="font-size: 0.6em;" href="https://www.github.com/openfun/marsha">github.com/openfun/marsha</a></h3>
+        <ul>
+          <li>Serverless encoding with Amazon AWS</li>
+          <li>LTI authentication</li>
+          <li>Adaptive Bit Rate <span style="padding-left:10px;font-size: 0.6em; color: #777777;">DASH, HLS</span></li>
+          <li>Multi-player <span style="padding-left:10px;font-size: 0.6em; color: #777777;">Plyr, Opensource, Accessible and ABR</span></li>
+          <li>xAPI analytics</li>
+          <li>Subtitles, transcripts</li>
+        </ul>
+      </section>
+
+      <section>
+        <p><img src="../assets/images/docker_kubernetes_openshift.png" width="600"></p>
+      </section>
+
+      <section>
+        <h2>A deployment tool for OpenShift</h2>
+        <h3><a style="font-size: 0.6em;" href="https://www.github.com/openfun/arnold">github.com/openfun/arnold</a></h3>
+        <ul>
+          <li>Built on Ansible with <a href="https://docs.ansible.com/ansible/2.6/modules/k8s_module.html">k8s</a>
+          <li>Blue/Green deployments with rollbacks</li>
+          <li>Multi-customer, multi-environment</li>
+          <li>App templates with flexible defaults / overrides</li>
+          <li>Managing secrets with Ansible vault and PGP keys</li>
+          <li>Automated SSL certificates with Let's Encrypt</li>
+        </ul>
+      </section>
+
+      <section>
+        <p>🙏 Thank you!</p>
+        <p>👊 Get in touch:</p>
+        <p><a href="mailto:fun.dev@fun-mooc.fr">fun.dev@fun-mooc.fr</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/openfun">openfun</a></p>
+        <p>🎓 Open Source for Education</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="../assets/reveal.js/lib/js/head.min.js"></script>
+  <script src="../assets/reveal.js/js/reveal.js"></script>
+
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      dependencies: [
+        { src: '../assets/reveal.js/plugin/markdown/marked.js' },
+        { src: '../assets/reveal.js/plugin/markdown/markdown.js' },
+        { src: '../assets/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '../assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+/*
+    Custom css rules for FUN presentations
+ */
+
+.reveal h1 {
+  font-size: 1.5em;
+  text-transform: none;
+}
+
+.reveal h2 {
+  text-transform: none;
+}
+
+.reveal h3 {
+  text-transform: none;
+}
+
+.reveal h4 {
+  text-transform: none;
+}
+
+.reveal section img {
+  box-shadow: none;
+}
+
+.reveal pre {
+  box-shadow: none;
+}
+
+.reveal pre code {
+  padding: 1rem;
+}
+
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
